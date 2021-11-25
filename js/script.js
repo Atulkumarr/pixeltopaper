@@ -6,7 +6,10 @@ $('.owl-carousel').owlCarousel({
     autoplaySpeed: 1500,
     autoplayHoverPause: false,
     nav: false,
-    dots: false,
+    dots: false, 
+    mouseDrag: false,
+    animateIn: 'fadeIn',
+    animateOut: 'fadeOut',
     responsive: {
         0: {
             items: 1

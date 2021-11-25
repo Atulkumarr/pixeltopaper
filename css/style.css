@@ -14,6 +14,7 @@
 html,
 body {
   font-size: 18px;
+  scroll-behavior: smooth;
   height: 100%;
 }
 /* classes used frequently */
