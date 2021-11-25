@@ -209,8 +209,24 @@ nav .top-contact i {
 }
 .product-box img {
   width: 100%;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+.product-box .product-img {
+  position: relative;
+}
+.product-box .product-img img:nth-child(2) {
+  position: absolute;
+  left: 0px;
+}
+
+.product-box .product-img .rotate:hover {
+  transform: rotate(5deg);
+}
+.product-box .product-img .rotate-revers:hover {
+  transform: rotate(-5deg);
+}
+
 .product-box h2 {
   color: white;
   text-align: center;
@@ -222,6 +238,7 @@ nav .top-contact i {
 .product-box:hover {
   transform: scale(1.1);
 }
+
 /* contact */
 .contact {
   margin-top: 3rem;
