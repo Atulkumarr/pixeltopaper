@@ -15,6 +15,7 @@ html,
 body {
   font-size: 18px;
   scroll-behavior: smooth;
+  background-color: #f8f8f8;
   height: 100%;
 }
 /* classes used frequently */
@@ -245,45 +246,97 @@ nav .top-contact i {
 
 /* contact */
 .contact {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .contact .contact-info {
   width: 45%;
   margin-top: 1.5rem;
 }
-.contact-info .info-box {
-  width: 38%;
-  margin-bottom: 1.3rem;
-  justify-content: unset;
+.contact .contact-info form input {
+  width: 80%;
+  height: 38px;
+  outline: none;
+  font-size: 0.8rem;
+  margin-bottom: 0.9rem;
+  border: none;
+  box-shadow: 0px 10px 5px -6px rgb(204 204 204);
+  padding-left: 10px;
 }
-.contact-info .info-box .icon {
-  width: 50px;
-  height: 50px;
+.contact .contact-info form button {
+  padding: 13px 31px;
   background-color: #fea700;
-  font-size: 1.1rem;
+  border: none;
+  border-radius: 21px;
+  font-size: 0.8rem;
+  font-weight: 700;
   color: white;
-  margin-right: 1.3rem;
-  border-radius: 2px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 1rem;
 }
 
-.contact .info h1 {
-  font-size: 1rem;
+/* removing the up down arrow from input type number */
+.contact-info input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
-.contact .info a {
-  font-size: 0.8rem;
-  color: #000;
+
+.contact .contact-info .rounded {
+  background-color: #fea700;
+  border-bottom-right-radius: 71px;
+  border-top-left-radius: 71px;
+  padding: 61px 1%;
+  justify-content: space-evenly;
+  color: white;
+  box-shadow: 0px 10px 5px -6px rgb(204 204 204);
+  position: relative;
 }
-.contact-info .info-box .icon i {
-  margin-left: 15px;
-}
-/* .contact .map {
-  width: 55%;
-}
-.contact .map iframe {
+.contact .contact-info .rounded::after {
+  content: "";
+  position: absolute;
+  height: 100%;
   width: 100%;
-  height: 311px;
-} */
+  border-bottom-right-radius: 71px;
+  border-top-left-radius: 71px;
+  border: 1.1px solid #fea700;
+  top: -30px;
+  left: 6%;
+  z-index: -10;
+}
+.contact .contact-info .rounded .icon {
+  width: 30%;
+  text-align: end;
+}
+.contact .contact-info .rounded .icon i {
+  transform: rotate(-45deg);
+  font-size: 3rem;
+}
+.contact .contact-info .rounded .rounded-text {
+  width: 61%;
+}
+.contact .contact-info .rounded h1 {
+  font-size: 0.9rem;
+}
+.contact .contact-info .rounded a {
+  font-size: 1.8rem;
+  color: white;
+}
+.contact .contact-info p {
+  margin-top: 1rem;
+  color: #595959;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.contact .contact-info p span {
+  margin-top: 1rem;
+  color: #757474;
+  margin-left: 3%;
+  font-weight: 600;
+}
 
 /* footer */
 
