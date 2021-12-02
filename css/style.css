@@ -31,10 +31,29 @@ body {
   align-items: center;
 }
 
+/* for product section hover */
+.hover-div {
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  padding: 0.4rem;
+  background-color: #fea700;
+}
+.hide-img {
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  top: 0.4rem;
+  left: 0.4rem;
+  width: 96.3%;
+  height: 88.5%;
+  opacity: 0;
+}
+.hover-div:hover .hide-img {
+  opacity: 1;
+}
+
 /* navigation */
 nav {
   background-color: white;
-  padding-bottom: 1rem;
 }
 
 /* top-contact */
@@ -68,6 +87,13 @@ nav .top-contact i {
 /* nav */
 .navigation {
   padding-top: 3rem;
+}
+.brand {
+  width: 8%;
+}
+.brand img {
+  width: 100%;
+  border-radius: 50%;
 }
 .navigation ul {
   display: flex;
@@ -108,35 +134,7 @@ nav .top-contact i {
 }
 .banner .item {
   width: 100%;
-  /* background-size: cover;
-  min-height: 600px;
-  height: 90vh; */
 }
-
-/* .banner .banner-text {
-  position: absolute;
-  top: 30%;
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
-  left: 0px;
-  right: 0px;
-  z-index: 44;
-}
-.banner-text h3 {
-  font-size: 3rem;
-  text-shadow: 2px 2px 3px white;
-  font-weight: 400;
-}
-.banner-text h1 {
-  text-shadow: 2px 2px 3px white;
-  font-size: 2.6rem;
-  font-weight: 900;
-}
-.banner-text p {
-  margin-top: 30px;
-  font-size: 1.2rem;
-} */
 
 /* about */
 .about {
@@ -196,6 +194,7 @@ nav .top-contact i {
   padding-bottom: 3rem;
   background-color: #303030;
 }
+
 .product p {
   color: white;
 }
@@ -204,6 +203,80 @@ nav .top-contact i {
   font-size: 1.3rem;
   font-weight: 500;
 }
+
+/* wall mount */
+
+.wall-mount {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.product h1 {
+  background-color: #fff;
+  padding: 0.5rem 0rem 0.5rem 0.5rem;
+  margin-bottom: 1rem;
+}
+.wall-mount p {
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+.wall-mount-slider .owl-nav {
+  margin-top: 10px;
+  position: absolute;
+  top: -3.7rem;
+  right: 20px;
+}
+
+.wall-mount .wallmount-item .hide-img {
+  width: 96.3%;
+  height: 88.5%;
+}
+
+/*marketing  materials */
+.marketing-material .marketing {
+  margin-bottom: 1rem;
+  width: 31%;
+  text-align: center;
+}
+.marketing-material .marketing img {
+  width: 100%;
+}
+.marketing-material .marketing .hide-img {
+  width: 96%;
+  height: 90%;
+}
+/* sticker */
+.sticker-box {
+  width: 30%;
+}
+.sticker-box img {
+  width: 100%;
+}
+.sticker-box .hide-img {
+  background-color: #fff;
+  width: 95%;
+  height: 90%;
+}
+/* architectural */
+.architectural h1 {
+  margin-top: 1rem;
+}
+.architectural-box {
+  width: 31%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.architectural-box img {
+  width: 100%;
+}
+.architectural-box .hide-img {
+  width: 96%;
+  height: 99%;
+  top: -0.7rem;
+}
+
 .product-box {
   width: 22%;
   margin: 1.2rem 0rem;
@@ -242,6 +315,20 @@ nav .top-contact i {
 }
 .product-box:hover {
   transform: scale(1.1);
+}
+
+/* product-last-section */
+
+.product-last-section {
+  margin-top: 1rem;
+}
+
+.product-last-section .img-box {
+  width: 31%;
+}
+
+.product-last-section .img-box img {
+  width: 100%;
 }
 
 /* contact */
@@ -386,3 +473,8 @@ footer .footer-contact a {
   display: inline-block;
   margin-left: 5px;
 }
+
+/* todo list 
+1. banner 4-5 pages
+2. whatsapp link
+*/

@@ -1,4 +1,4 @@
-$('.owl-carousel').owlCarousel({
+$('.banner-slider').owlCarousel({
     loop: true,
     margin: 0,
     autoplay: true,
@@ -19,6 +19,28 @@ $('.owl-carousel').owlCarousel({
         },
         1000: {
             items: 1
+        }
+    }
+});
+$('.wall-mount-slider').owlCarousel({
+    loop: true,
+    margin: 20,
+    autoplay: true,
+    autoplayTimeout: 4000,
+    autoplaySpeed: 1500,
+    autoplayHoverPause: false,
+    nav: true,
+    dots: true,
+    loop: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 3
         }
     }
 });
