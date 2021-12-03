@@ -221,18 +221,32 @@ nav .top-contact i {
   text-align: center;
 }
 
-.wall-mount-slider .owl-nav {
-  margin-top: 10px;
-  position: absolute;
-  top: -3.7rem;
-  right: 20px;
-}
-
 .wall-mount .wallmount-item .hide-img {
   width: 96.3%;
   height: 88.5%;
 }
+/* wall-mount owl slider */
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fea700;
+}
 
+.wall-mount-slider .owl-nav {
+  margin-top: 10px;
+  position: absolute;
+  top: -4.2rem;
+  right: 20px;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: none;
+  color: inherit;
+}
+/* .owl-theme .owl-nav .disabled {
+  cursor: not-allowed;
+} */
 /*marketing  materials */
 .marketing-material .marketing {
   margin-bottom: 1rem;
@@ -277,6 +291,7 @@ nav .top-contact i {
   top: -0.7rem;
 }
 
+/* product list */
 .product-box {
   width: 22%;
   margin: 1.2rem 0rem;
@@ -329,6 +344,10 @@ nav .top-contact i {
 
 .product-last-section .img-box img {
   width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.product-last-section .img-box img:hover {
+  box-shadow: 0px 0px 4px #dbdbdb;
 }
 
 /* contact */

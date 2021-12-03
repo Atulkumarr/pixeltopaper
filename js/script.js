@@ -23,14 +23,14 @@ $('.banner-slider').owlCarousel({
     }
 });
 $('.wall-mount-slider').owlCarousel({
-    loop: true,
     margin: 20,
     autoplay: true,
     autoplayTimeout: 4000,
     autoplaySpeed: 1500,
     autoplayHoverPause: false,
     nav: true,
-    dots: true,
+    dots: false,
+    // loop: false,
     loop: true,
     responsive: {
         0: {
