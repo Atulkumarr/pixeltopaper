@@ -89,7 +89,7 @@ nav .top-contact i {
   padding-top: 3rem;
 }
 .brand {
-  width: 8%;
+  width: 13%;
 }
 .brand img {
   width: 100%;
@@ -332,6 +332,14 @@ nav .top-contact i {
   transform: scale(1.1);
 }
 
+.aligned-inline {
+  width: 74%;
+}
+
+.aligned-inline .product-box {
+  width: 30%;
+}
+
 /* product-last-section */
 
 .product-last-section {
@@ -456,7 +464,7 @@ footer .extra-width {
   width: 40%;
 }
 footer .footer-box {
-  width: 28%;
+  width: 33%;
 }
 footer .footer-box h1 {
   position: relative;
