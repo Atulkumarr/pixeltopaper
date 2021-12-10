@@ -37,6 +37,7 @@ body {
   position: relative;
   padding: 0.4rem;
   background-color: #fea700;
+  cursor: pointer;
 }
 .hide-img {
   position: absolute;
@@ -59,7 +60,7 @@ nav {
 /* top-contact */
 nav .top-contact::before {
   content: "";
-  width: 90px;
+  width: 98px;
   height: 100%;
   background-color: #fea700;
   position: absolute;
@@ -76,6 +77,7 @@ nav .top-contact {
   top: 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 nav .top-contact a {
   color: white;
@@ -83,6 +85,20 @@ nav .top-contact a {
 }
 nav .top-contact i {
   margin-right: 0.4rem;
+}
+nav .top-email {
+  width: 40%;
+  color: white;
+  align-content: center;
+  justify-content: right;
+}
+nav .top-email .mail {
+  width: 9%;
+  padding-top: 8px;
+  height: 19px;
+}
+nav .top-email a {
+  width: 80%;
 }
 /* nav */
 .navigation {
@@ -346,15 +362,16 @@ nav .top-contact i {
   margin-top: 1rem;
 }
 
-.product-last-section .img-box {
+.product-last-section .last-img {
   width: 31%;
+  cursor: pointer;
 }
 
-.product-last-section .img-box img {
+.product-last-section .last-img img {
   width: 100%;
   transition: all 0.3s ease-in-out;
 }
-.product-last-section .img-box img:hover {
+.product-last-section .last-img img:hover {
   box-shadow: 0px 0px 4px #dbdbdb;
 }
 
@@ -367,7 +384,8 @@ nav .top-contact i {
   width: 45%;
   margin-top: 1.5rem;
 }
-.contact .contact-info form input {
+.contact .contact-info form input,
+textarea {
   width: 80%;
   height: 38px;
   outline: none;
@@ -376,6 +394,9 @@ nav .top-contact i {
   border: none;
   box-shadow: 0px 10px 5px -6px rgb(204 204 204);
   padding-left: 10px;
+}
+.contact .contact-info form textarea {
+  height: 91px;
 }
 .contact .contact-info form button {
   padding: 13px 31px;
@@ -451,7 +472,55 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-left: 3%;
   font-weight: 600;
 }
+/* click box */
 
+.click-box {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+  position: fixed;
+  top: 0%;
+  background-color: #303030;
+  transform: scale(0);
+}
+/* .click-box.add-me {
+  transform: scale(1);
+} */
+.click-box .click-content {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.click-box .click-content button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+.click-box .click-content h1 {
+  color: white;
+  font-size: 2.2rem;
+}
+.click-box .click-content a {
+  color: #fea700;
+  font-size: 1.2rem;
+  margin-top: 6px;
+}
+.click-box .click-content p {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 6px;
+}
+.add-me {
+  transform: scale(1);
+}
 /* footer */
 
 footer {
@@ -493,6 +562,13 @@ footer .footer-box a {
   display: block;
   transition: all 0.3s ease-in-out;
 }
+footer .footer-box .mail p {
+  margin-bottom: 5px;
+}
+footer .footer-box .mail a {
+  margin-top: 5px;
+  display: block;
+}
 footer .footer-box a:hover {
   color: #fea700;
 }
@@ -505,3 +581,23 @@ footer .footer-contact a {
 1. banner 4-5 pages
 2. whatsapp link
 */
+
+/* for submit.html */
+.master-container {
+  background-color: #303030;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.master-container h2 {
+  font-size: 3rem;
+  color: white;
+}
+.master-container a {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: white;
+}
