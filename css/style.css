@@ -106,14 +106,14 @@ nav .top-email a {
 }
 /* nav */
 .navigation {
-  padding-top: 3rem;
+  padding-top: 3.5rem;
+  padding-bottom: 0.5rem;
 }
 .brand {
   width: 13%;
 }
 .brand img {
   width: 100%;
-  border-radius: 50%;
 }
 .navigation ul {
   display: flex;
@@ -241,10 +241,6 @@ nav .top-email a {
   text-align: center;
 }
 
-.wall-mount .wallmount-item .hide-img {
-  /* width: 96.3%; */
-  /* height: 88.5%; */
-}
 /* wall-mount owl slider */
 .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next,
@@ -277,17 +273,24 @@ nav .top-email a {
   width: 100%;
 }
 .marketing-material .marketing .hide-img {
-  /* width: 96%; */
-  /* height: 90%; */
+  height: 98.7%;
+}
+.marketing-material .marketing .marketing-adjustment {
+  width: 96%;
+  left: 1.9%;
+  height: 90%;
+  top: 1.7%;
 }
 /* sticker */
 .sticker-box {
   width: 30%;
+  text-align: center;
 }
 .sticker-box img {
   width: 100%;
 }
 .sticker-box .hide-img {
+  height: 98%;
   background-color: #fff;
 }
 /* architectural */
@@ -571,11 +574,6 @@ footer .footer-contact a {
   display: inline-block;
   margin-left: 5px;
 }
-
-/* todo list 
-1. banner 4-5 pages
-2. whatsapp link
-*/
 
 /* for submit.html */
 .master-container {
