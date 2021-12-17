@@ -44,6 +44,18 @@
         <li><a href="#product">Product</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <!-- hamburger code from code pen -->
+      <button class="menu"
+        onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+        aria-label="Main Menu">
+        <svg width="50" height="40" viewBox="0 0 100 100">
+          <path class="line line1"
+            d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+          <path class="line line2" d="M 20,50 H 80" />
+          <path class="line line3"
+            d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+        </svg>
+      </button>
     </div>
   </nav>
   <!-- banner -->
@@ -353,14 +365,14 @@
             </div>
             <h2>Visiting Card</h2>
           </div>
-          <div class="product-box">
+          <div class="product-box extra-margin">
             <div class="product-img">
               <img src="images/product/paper.jpg">
               <img src="images/product/paper.jpg" class="rotate-revers">
             </div>
             <h2>printing papers </h2>
           </div>
-          <div class="product-box">
+          <div class="product-box responsive-product-box">
             <div class="product-img">
               <img src="images/product/stamp.jpg">
               <img src="images/product/stamp.jpg" class="rotate-revers">
@@ -470,7 +482,7 @@
     <h1>Request a call back</h1>
     <p class="yellow-text">How can we help?</p>
     <div class="flex">
-      <div class="contact-info">
+      <div class="contact-info order-responsive">
         <form action="process.php" method="post">
           <input type="text" placeholder="Name" name="name" required>
           <input type="email" placeholder="Email" name="email" required>
@@ -479,7 +491,7 @@
           <button type="submit" name="submit">Send Request</button>
         </form>
       </div>
-      <div class="contact-info">
+      <div class="contact-info responsive-width">
         <div class="flex rounded">
           <div class="icon">
             <i class="fas fa-phone-volume"></i>
@@ -512,7 +524,10 @@
     <div class="fix-width flex flex-start">
       <div class="footer-box extra-width">
         <h1>Pixel to Paper</h1>
-        <!-- <p>We got your every need covered from Monday to Sunday & January to December</p> -->
+        <p>Office : 83, Radha Ganj ,Dewas – 455001
+          M.P.– INDIA
+        </p>
+        <p>Factory address: sector II industrial area dewas</p>
       </div>
       <div class="footer-box">
         <h1>Quick Links</h1>
@@ -522,8 +537,6 @@
       </div>
       <div class="footer-box footer-contact">
         <h1>Contact Info</h1>
-        <p>83, Radha Ganj ,Dewas – 455001
-          M. P. – INDIA</p>
         <p>Phone:<a href="tel:95380 20202">+91 95380 20202</a></p>
         <div class="mail">
           <p>Email :</p>

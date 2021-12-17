@@ -97,9 +97,9 @@ nav .top-email {
   justify-content: right;
 }
 nav .top-email .mail {
-  width: 9%;
   padding-top: 8px;
   height: 19px;
+  margin-right: 0.4rem;
 }
 nav .top-email a {
   width: 80%;
@@ -148,6 +148,50 @@ nav .top-email a {
 .navigation ul li a:hover::before {
   width: 100%;
 }
+/* hamburger code from code pen */
+.menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  display: none;
+}
+.line {
+  fill: none;
+  stroke: black;
+  stroke-width: 6;
+  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.line1 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.line2 {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+.line3 {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+.opened .line1 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+.opened .line2 {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+.opened .line3 {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
 /* banner starts */
 .banner {
   position: relative;
@@ -213,6 +257,7 @@ nav .top-email a {
   padding-top: 3rem;
   padding-bottom: 3rem;
   background-color: #303030;
+  overflow: hidden;
 }
 
 .product p {
@@ -424,6 +469,7 @@ input[type="number"]::-webkit-outer-spin-button {
   color: white;
   box-shadow: 0px 10px 5px -6px rgb(204 204 204);
   position: relative;
+  width: 93%;
 }
 .contact .contact-info .rounded::after {
   content: "";
@@ -438,7 +484,7 @@ input[type="number"]::-webkit-outer-spin-button {
   z-index: -10;
 }
 .contact .contact-info .rounded .icon {
-  width: 30%;
+  width: 19%;
   text-align: end;
 }
 .contact .contact-info .rounded .icon i {
@@ -446,7 +492,7 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 3rem;
 }
 .contact .contact-info .rounded .rounded-text {
-  width: 61%;
+  width: 69%;
 }
 .contact .contact-info .rounded h1 {
   font-size: 0.9rem;
@@ -527,9 +573,11 @@ footer {
   padding-bottom: 3rem;
   color: white;
 }
-footer .extra-width {
-  width: 40%;
+footer .extra-width p {
+  /* width: 40%; */
+  padding-right: 4rem;
 }
+
 footer .footer-box {
   width: 33%;
 }
@@ -553,6 +601,7 @@ footer .footer-box p {
   font-size: 0.86rem;
   line-height: 1.3rem;
 }
+
 footer .footer-box a {
   color: white;
   font-size: 0.86rem;
@@ -567,12 +616,15 @@ footer .footer-box .mail a {
   margin-top: 5px;
   display: block;
 }
+footer .footer-box p a {
+  margin-top: 0px;
+  margin-left: 5px;
+}
 footer .footer-box a:hover {
   color: #fea700;
 }
 footer .footer-contact a {
   display: inline-block;
-  margin-left: 5px;
 }
 
 /* for submit.html */
@@ -593,4 +645,191 @@ footer .footer-contact a {
   font-size: 1rem;
   margin-top: 1rem;
   color: white;
+}
+
+/* media query start here */
+@media (max-width: 881px) {
+  .contact .responsive-width {
+    width: 54%;
+  }
+  nav .top-contact {
+    width: 70%;
+  }
+}
+
+@media (max-width: 788px) {
+  html {
+    font-size: 16px;
+  }
+  .navigation {
+    padding-top: 4.5rem;
+  }
+  nav .top-contact {
+    width: 84%;
+  }
+  .about .about-img {
+    width: 63%;
+    margin: 0 auto;
+  }
+  .about .about-text {
+    width: 64%;
+    margin: 0px auto;
+    margin-top: 1rem;
+  }
+  .product-box {
+    width: 30%;
+  }
+  .responsive-product-box {
+    margin-right: auto;
+  }
+  .extra-margin {
+    margin-right: 5%;
+  }
+  .product-box h2 {
+    font-size: 0.7rem;
+  }
+  .product p {
+    font-size: 0.7rem;
+  }
+  footer .extra-width {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 658px) {
+  .menu {
+    display: block;
+    position: fixed;
+    right: 10px;
+    background: #f8f8f8;
+    z-index: 98;
+  }
+  .line {
+    stroke: #303030;
+  }
+  .navigation ul {
+    transition: 0.3s;
+    flex-direction: column;
+    position: fixed;
+    width: 350px;
+    height: 100vh;
+    background: #303030;
+    z-index: 98;
+    top: 0px;
+    left: -360px;
+    padding: 11% 0px;
+    align-items: center;
+  }
+  .navigation .active-ul {
+    left: 0px;
+  }
+
+  nav .top-contact {
+    display: none;
+  }
+  .navigation {
+    padding-top: 1rem;
+  }
+  .about .about-img {
+    width: 80%;
+  }
+  .about .about-text {
+    width: 80%;
+  }
+  .marketing-material .marketing {
+    width: 48%;
+  }
+  .product p {
+    font-size: 1rem;
+  }
+  .sticker-box {
+    width: 48%;
+  }
+  .product-box {
+    width: 48%;
+  }
+  .product-box h2 {
+    font-size: 1rem;
+  }
+  .extra-margin {
+    margin-right: 0px;
+  }
+  .responsive-product-box {
+    margin-right: unset;
+  }
+  .product-last-section .last-img {
+    width: 48%;
+    margin-bottom: 1rem;
+  }
+  .contact .contact-info {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+  }
+  .contact .contact-info form input,
+  textarea {
+    width: 100%;
+  }
+  .contact .contact-info .rounded {
+    margin-top: 2rem;
+  }
+  footer .footer-box {
+    width: 42%;
+  }
+  footer .extra-width {
+    width: 100%;
+  }
+}
+
+@media (max-width: 516px) {
+  .navigation ul {
+    width: 240px;
+  }
+  .brand {
+    width: 25%;
+  }
+  .about .about-text h2 {
+    font-size: 1.3rem;
+  }
+  .about .about-text h1 {
+    font-size: 1.5rem;
+  }
+  .about .about-text .details {
+    line-height: 1.4rem;
+  }
+  .product h1 {
+    font-size: 1.2rem;
+  }
+  .marketing-material .marketing,
+  .sticker-box,
+  .product-box,
+  .product-last-section .last-img {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .contact .contact-info {
+    width: 100%;
+  }
+  .other-product h1 {
+    margin-bottom: 1rem;
+  }
+  .contact .contact-info .rounded a {
+    font-size: 1.2rem;
+  }
+  .hover-div {
+    width: 80%;
+    margin: 0 auto;
+  }
+  footer .footer-box {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .click-box .click-content h1 {
+    font-size: 1.6rem;
+  }
+  .click-box .click-content a {
+    font-size: 0.9rem;
+  }
 }

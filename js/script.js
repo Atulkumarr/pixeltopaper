@@ -46,11 +46,16 @@ $(".wall-mount-slider").owlCarousel({
     0: {
       items: 1,
     },
-    600: {
+    500: {
       items: 2,
     },
-    1000: {
+    700: {
       items: 3,
     },
   },
+});
+
+// hamburger code
+$(".menu").click(function () {
+  $(".navigation ul").toggleClass("active-ul");
 });
