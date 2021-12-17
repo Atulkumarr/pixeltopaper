@@ -524,6 +524,7 @@ input[type="number"]::-webkit-outer-spin-button {
   top: 0%;
   transform: scale(0);
   backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .click-box .click-content {
@@ -718,7 +719,9 @@ footer .footer-contact a {
     z-index: 98;
     top: 0px;
     left: -360px;
-    padding: 11% 0px;
+    /* padding: 11% 0px; */
+    padding-top: 11%;
+    padding-bottom: 21%;
     align-items: center;
   }
   .navigation .active-ul {
