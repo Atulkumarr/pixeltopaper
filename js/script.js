@@ -1,12 +1,3 @@
-// for modal
-
-$(".product-box,.hover-div,.last-img").click(function () {
-  $(".click-box").addClass("add-me");
-});
-$(".close-click").click(function () {
-  $(".click-box").removeClass("add-me");
-});
-
 // owl
 $(".banner-slider").owlCarousel({
   loop: true,
@@ -46,7 +37,7 @@ $(".wall-mount-slider").owlCarousel({
     0: {
       items: 1,
     },
-    500: {
+    517: {
       items: 2,
     },
     700: {
@@ -55,7 +46,24 @@ $(".wall-mount-slider").owlCarousel({
   },
 });
 
+// for modal
+
+$(".product-box,.hover-div,.last-img").click(function () {
+  $(".click-box").addClass("add-me");
+});
+$(".close-click").click(function () {
+  $(".click-box").removeClass("add-me");
+});
+
 // hamburger code
 $(".menu").click(function () {
   $(".navigation ul").toggleClass("active-ul");
+});
+
+// blur div
+$(".product-box,.hover-div,.last-img").click(function () {
+  $("nav, header, section, footer").addClass("blur-div");
+});
+$(".close-click").click(function () {
+  $("nav, header, section, footer").removeClass("blur-div");
 });
