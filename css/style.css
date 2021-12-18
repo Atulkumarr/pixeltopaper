@@ -6,8 +6,6 @@
   text-decoration: none;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  /* transition: 0.2s ease-in;
-  -webkit-transition: 0.2s ease-in; */
   list-style: none;
   font-family: "Raleway", sans-serif;
 }
@@ -578,7 +576,6 @@ footer {
   color: white;
 }
 footer .extra-width p {
-  /* width: 40%; */
   padding-right: 4rem;
 }
 
@@ -642,11 +639,11 @@ footer .footer-contact a {
   flex-direction: column;
 }
 .master-container h2 {
-  font-size: 3rem;
+  font-size: 1.3rem;
   color: white;
 }
 .master-container a {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin-top: 1rem;
   color: white;
 }
@@ -722,7 +719,6 @@ footer .footer-contact a {
     z-index: 98;
     top: 0px;
     left: -360px;
-    /* padding: 11% 0px; */
     padding-top: 11%;
     padding-bottom: 21%;
     align-items: center;
