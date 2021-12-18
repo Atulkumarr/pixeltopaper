@@ -523,8 +523,14 @@ input[type="number"]::-webkit-outer-spin-button {
   position: fixed;
   top: 0%;
   transform: scale(0);
+  /* backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); */
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.38);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.2px);
+  -webkit-backdrop-filter: blur(13.2px);
 }
 
 .click-box .click-content {
